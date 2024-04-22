@@ -1,0 +1,58 @@
+h3{
+    font-size: 50px;
+    color:rgb(255, 255, 255);
+    animation-duration: 7s;
+    animation-name: slidein;
+    text-shadow: 0 0 20px #448ee4,
+                 0 0 40px #448ee4,
+                 0 0 80px #448ee4,
+                 0 0 100px #448ee4 ;
+
+}
+@keyframes slidein{
+    from{
+        margin-left:50%;
+    }
+    to{
+        margin-left:0%
+    }
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+*:focus{
+    outline:none;
+}
+body{
+    margin:0;
+    background-image: url("bg.jpg");
+    background-repeat: fill;
+    background-size: cover;
+}
+.container{
+    margin:auto;
+    overflow:auto;
+}
+.gallery{
+    margin:5px;
+    float:left;
+    width:390px;
+}
+
+.gallery img{
+    width:380px;
+    height:300px;
+    border:2px solid #d8cecb36;
+    border-radius: 13px;
+    box-shadow:4px 7px 7px 0px #00000042;
+    cursor:pointer;
+    margin:10px;
+    transition:400ms;
+    overflow:hidden;    
+}
+.gallery img:hover{
+    transform:scale(1.1);
+}
+
